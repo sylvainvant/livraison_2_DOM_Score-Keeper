@@ -7,8 +7,17 @@ h1 {
 .player {
   text-align: center;
 }
+.player1 {
+  margin: auto 100px auto auto;
+}
+.player2 {
+  margin: auto auto auto 120px;
+}
+
 main {
   text-align: center;
+  background-color: #808080;
+  padding: 20px 20px;
 }
 .scrore1, .scrore2 {
   align-items: center;
@@ -18,17 +27,20 @@ main {
   width: 110px;
   height: 150px;
   font-size: 7rem;
-  border:2px solid green;
+  border:3px solid green;
   display: inline-flex;
   box-shadow: 8px 8px 12px silver;
   justify-content: center;
 }
 
-
+input {
+  /*font-size: 20px;*/
+  margin: 0 20px auto 30px;
+}
 .score {
 
   justify-content:  center;
-  margin: 20px auto;
+  margin: 30px auto;
   display: block;
 
 
