@@ -4,44 +4,89 @@ html, body{
 h1 {
   text-align: center;
 }
-.player {
+h2{
+  margin : 0;
+  background-color:red;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  width: 100%;
   text-align: center;
 }
-.player1 {
-  margin: auto 100px auto auto;
+main {
+  padding: 20px 20px;
+
 }
-.player2 {
-  margin: auto auto auto 120px;
+.player {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+}
+.player2,.player1{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border:1px solid black;
+}
+.parameter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.add{
+  background-color:#007bff;
+}
+.save{
+  background-color:#28a745;
+}
+.reset{
+  background-color:#dc3545;
 }
 
-main {
+.score{
   text-align: center;
-  background-color: #808080;
-  padding: 20px 20px;
-}
-.scrore1, .scrore2 {
-  align-items: center;
-  text-align: center;
-  margin: 20px auto auto 20px;
   padding: 15px 15px;
-  width: 110px;
+  width: 150px;
   height: 150px;
   font-size: 7rem;
   border:3px solid green;
-  display: inline-flex;
-  box-shadow: 8px 8px 12px silver;
-  justify-content: center;
+
 }
 
 input {
-  /*font-size: 20px;*/
-  margin: 0 20px auto 30px;
+  margin: 10px 20px;
+  width: 50px;
+  text-align: center;
 }
-.score {
+.scorecontainer{
+  width: 150px;
+  height: 150px;
+  display: none;
+}
+.winner{
+  background-image: url('../img/winner.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.looser{
+  background-image: url('../img/looser.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
-  justify-content:  center;
-  margin: 30px auto;
-  display: block;
-
-
+}
+@media screen and (max-width: 760px){
+  .parameter,.player{
+    flex-direction: column;
+  }
+.player2, .player1{
+  width: 100%;
+}
 }
