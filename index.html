@@ -8,23 +8,36 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>Score Keeper</h1>
-</header><!--  /header  -->
-<main>
-  <section class="player">
-    <button class="player1" onclick="playyer1(0)">Player1 ❯</button>
-    <button class="player2" onclick="player2(0)">Player2 ❯</button>
-  </section><!-- /section -->
-  <div class="scrore1"></div>
-  <div class="scrore2"></div>
-  <section class="score">
-    <input type="text" name="" value="5" size="1">
-    <button class="reset" onclick="document.location.reload(true);">reset ❯</button>
-  </section>
-</main>
+  <header>
+    <h1>Score Keeper</h1>
+  </header><!--  /header  -->
+  <main>
+
+    <section class="player">
+      <div class="player1">
+        <h2>Player 1</h2>
+        <div class="scorecontainer">
+        </div>
+        <input class="score" disabled="disabled" value="0"/>
+        <button class="btn add" data-player="1">Add points</button>
+      </div>
+      <div class="divider"></div>
+      <div class="player2">
+        <h2>Player 2</h2>
+        <div class="scorecontainer">
+        </div>
+        <input class="score" disabled="disabled" value="0"/>
+        <button class="btn add" data-player="0">Add points</button>
+      </div>
+    </section>
+    <section class="parameter">
+      <input type="number" value="5" class="maxScore">
+      <button class="btn save">save</button>
+      <button class="btn reset">reset</button>
+    </section>
+  </main>
 
 
-<script src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
